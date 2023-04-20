@@ -1,0 +1,160 @@
+
+<!-- 
+   amr alaa ali          20198060  
+   mona fakry salem      20198107 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        legend{ color: rgb(251, 219, 94);}
+        body{background-color: rgb(56, 143, 143);
+        position: relative; font-size: larger;
+        }
+         form{ background-color: rgb(92, 124, 117); position: relative;left: 300px; width: fit-content;} 
+        h1{font-weight: bold;color: rgb(217, 229, 135); }
+        label{font-weight: bold;}
+        p{color: azure;}
+    </style>
+    <h1 style="position: relative; left: 680px;" > The King Group For Top cars </h1>
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <p style="position: relative; left: 300px;" > Made by Amr Alaa Ali ~ 20198060  ~ 20198107</p>
+    <form name="King_form" method="post" action="https://www.google.com/" onsubmit="return validation_func()" target="_self">
+       <fieldset>
+        <legend> Fill the form to Buy a new One</legend>
+        <fieldset>
+            <legend > Personal information </legend>
+            <label for="fname">1st name</label>
+            <input type="text" id="fname" name="fname" value="King" maxlength="10" required><br>
+            <br>
+            <label for="lname">last name</label>
+            <input type="text" id="lname" name="lname" value="Amr" maxlength="10"><br>
+            <br>
+            <label for="E-mail">email</label>
+            <input type="email" name="E-mail" id="E-mail" value="King_amr@gmail.com"><br>
+            <br>
+            <label for="Adress">Adress</label>
+            <input id="Adress" name="Adress" type="text" value="On the moon"><br>
+            <br>
+            <label for="phone">phone number</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="01011577033"
+            pattern="[0]{1}[0-9]{10}">
+            <br>
+            <label for="BirthDay">birthDay</label>
+            <input id="BirthDay" name="BirthDay" type="date">
+            <input type="reset" value="Reset values">
+        </fieldset>
+        <br> <br> <br>
+       <fieldset>
+        <legend> Payment information</legend>
+        <label for="post">post_code</label>
+        <input name="post" id="post" type="number"><br> <br>
+        <label for="branch">branch name</label>
+        <input id="branch" name="branch" type="text"> <br> <br>
+        <label for="bank account">bank account</label>
+        <input name="bank account" id="bank account" value="112890547" type="number"min="0">
+        <label >password</label> 
+        <input name="bank account pw" id="bank account pw" type="password"><br>
+       </fieldset> <br><br><br>
+       <fieldset>
+        <legend> Car information</legend>
+    <br>
+    <label for="6"> number of cars u want buy</label>
+    <input type="number" name="6" id="6" max="12" min="1" ><br><br>
+        <label>Color of the car</label>
+    <input type="radio" name="red" id="red">
+    <label for="red">red</label>
+    <input type="radio" name="green" id="green">
+    <label for="green">green</label>
+    <input type="radio" name="white" id="red">
+    <label for="white">white</label> <br><br>
+    <label for="model_year"> model year</label>
+    <select id="model_year" name="model_year">
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+    </select> <br> <br>
+    <label for="acception"> Do you agree on our rules ?? </label>
+    <input type="checkbox" id="acception" value="acception">
+    </fieldset>
+    <input  style=" position: relative ; left: 200px;   width: 200px;" type="submit" value=" submit form">
+
+    </fieldset></form> </td>
+
+            <td>
+                <table style="width: max-content;"> 
+                    <tr>
+                        <td>
+                            <img src="download.jpg" width="500" height="280">
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <img src="9a7984f279.jpg" width="500" height="280" >
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+
+<script>
+
+function validation_func(){
+var x = document.forms["King_form"]["fname"].value;
+var y = document.forms["King_form"]["E-mail"].value;
+var z = document.forms["King_form"]["bank account pw"].value;
+var o = document.forms["King_form"]["phone"].value;
+var s = document.forms["King_form"]["model_year"].value;
+var A = document.forms["King_form"]["acception"].value;
+
+if( z.length > 18 ){
+    alert(" there is a max size of bank account length");
+    return false
+}
+
+if(x==""){
+    alert("name must be filled out ");
+    return false
+}
+
+if(y==""){
+    alert("E-mail must be filled out ");
+    return false
+}
+
+if(z==""){
+    alert("bank account password must be filled out ");
+    return false
+}
+
+if(o==""){
+    alert("phone must be filled out ");
+    return false
+}
+
+if(s==""){
+    alert("model_year must be filled out ");
+    return false
+}
+if(A==""){
+    alert("You have to agree on our rules before submitting ");
+    return false
+}
+
+}
+
+</script>
+</html>
